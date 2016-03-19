@@ -1,6 +1,10 @@
 import _ from 'underscore';
 import Backbone from 'backbone';
 
+_.mapObject({start: 5, end: 12}, function(val, key) {
+  return val + 5;
+});
+
 var previousRadio = Backbone.Radio;
 
 var Radio = Backbone.Radio = {};
